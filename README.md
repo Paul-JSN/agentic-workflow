@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Agentic-workflow%20pack-6b7cff" alt="Agentic workflow pack" />
   <img src="https://img.shields.io/badge/Status-public%20baseline-2ea043" alt="Status public baseline" />
   <img src="https://img.shields.io/badge/Focus-approval--first%20workflows-f59e0b" alt="Focus approval-first workflows" />
-  <img src="https://img.shields.io/badge/Includes-25%2B%20role%20templates%20%2B%20workflows-8b5cf6" alt="Includes 25+ role templates and workflows" />
+  <img src="https://img.shields.io/badge/Includes-50%2B%20role%20templates%20%2B%20workflows-8b5cf6" alt="Includes 50+ role templates and workflows" />
 </p>
 
 This repository is a **generic, reusable Agent OS / workflow pack** for structured multi-agent systems.
@@ -88,12 +88,22 @@ Beyond the core workflow spine, this repo now includes a broader copy-paste role
 | Category | Included specialists |
 | --- | --- |
 | Engineering | frontend-developer, backend-architect, devops-automator, security-engineer, software-architect, technical-writer, rapid-prototyper, sre |
-| Product | product-manager, sprint-prioritizer, feedback-synthesizer |
+| Product | product-manager, sprint-prioritizer, feedback-synthesizer, trend-researcher, behavioral-nudge-engine |
 | Testing | reality-checker, accessibility-auditor |
-| Support | analytics-reporter, infrastructure-maintainer, executive-summary-generator |
+| Support | analytics-reporter, infrastructure-maintainer, executive-summary-generator, support-responder, legal-compliance-checker, finance-tracker |
 | Growth | paid-social-strategist, content-creator, outbound-strategist |
+| Design | ui-designer, ux-researcher, ux-architect, brand-guardian, visual-storyteller, whimsy-injector |
+| Paid Media | ppc-strategist, tracking-measurement-specialist, ad-creative-strategist, search-query-analyst, paid-media-auditor |
+| Sales | discovery-coach, deal-strategist, pipeline-analyst, proposal-strategist, sales-engineer, account-strategist |
+| Project Management | project-shepherd, studio-producer, experiment-tracker, jira-workflow-steward, project-manager-senior |
 
 These are optional overlays. The repo still expects the **core orchestration spine** to stay intact.
+
+### At a glance
+- core workflow roles: **6**
+- support / vertical baseline roles: **2**
+- specialist overlay roles: **46**
+- total role templates in repo: **54**
 
 ## Starter bundles
 
@@ -150,6 +160,15 @@ agent-os-pack/
 │   ├── support/
 │   ├── vertical/
 │   └── specialists/
+│       ├── design/
+│       ├── engineering/
+│       ├── growth/
+│       ├── paid-media/
+│       ├── product/
+│       ├── project-management/
+│       ├── sales/
+│       ├── support/
+│       └── testing/
 ├── starter-bundles/
 │   ├── MINIMAL.md
 │   ├── STANDARD.md

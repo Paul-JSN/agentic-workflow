@@ -41,3 +41,43 @@ The adapted specialist role templates in `packs/specialists/` were rewritten int
 - outbound-strategist
 
 See `vendor-licenses/agency-agents-MIT.txt` for the upstream license text.
+
+
+### Design
+- ui-designer
+- ux-researcher
+- ux-architect
+- brand-guardian
+- visual-storyteller
+- whimsy-injector
+
+### Paid Media
+- ppc-strategist
+- tracking-measurement-specialist
+- ad-creative-strategist
+- search-query-analyst
+- paid-media-auditor
+
+### Sales
+- discovery-coach
+- deal-strategist
+- pipeline-analyst
+- proposal-strategist
+- sales-engineer
+- account-strategist
+
+### Project Management
+- project-shepherd
+- studio-producer
+- experiment-tracker
+- jira-workflow-steward
+- project-manager-senior
+
+### Additional Support
+- support-responder
+- legal-compliance-checker
+- finance-tracker
+
+### Additional Product
+- trend-researcher
+- behavioral-nudge-engine
