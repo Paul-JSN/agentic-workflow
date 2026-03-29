@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Agentic-workflow%20pack-6b7cff" alt="Agentic workflow pack" />
   <img src="https://img.shields.io/badge/Status-public%20baseline-2ea043" alt="Status public baseline" />
   <img src="https://img.shields.io/badge/Focus-approval--first%20workflows-f59e0b" alt="Focus approval-first workflows" />
-  <img src="https://img.shields.io/badge/Includes-role%20templates%20%2B%20starter%20bundles-8b5cf6" alt="Includes role templates and starter bundles" />
+  <img src="https://img.shields.io/badge/Includes-25%2B%20role%20templates%20%2B%20workflows-8b5cf6" alt="Includes 25+ role templates and workflows" />
 </p>
 
 This repository is a **generic, reusable Agent OS / workflow pack** for structured multi-agent systems.
@@ -20,6 +20,7 @@ It packages the parts that usually get hand-waved away in ad hoc setups:
 - permission profiles
 - trust-boundary rules
 - handoff snippets
+- specialist role overlays
 
 The goal is simple: **make multi-agent work less vague, less fragile, and less fake-done.**
 
@@ -80,6 +81,20 @@ That separation is one of the main things that keeps a workflow from drifting in
 
 ---
 
+## Specialist role library
+
+Beyond the core workflow spine, this repo now includes a broader copy-paste role library for operators who want more than a minimal setup.
+
+| Category | Included specialists |
+| --- | --- |
+| Engineering | frontend-developer, backend-architect, devops-automator, security-engineer, software-architect, technical-writer, rapid-prototyper, sre |
+| Product | product-manager, sprint-prioritizer, feedback-synthesizer |
+| Testing | reality-checker, accessibility-auditor |
+| Support | analytics-reporter, infrastructure-maintainer, executive-summary-generator |
+| Growth | paid-social-strategist, content-creator, outbound-strategist |
+
+These are optional overlays. The repo still expects the **core orchestration spine** to stay intact.
+
 ## Starter bundles
 
 You do **not** need every role for every workflow.
@@ -133,7 +148,8 @@ agent-os-pack/
 │   │   ├── critic/
 │   │   └── verifier/
 │   ├── support/
-│   └── vertical/
+│   ├── vertical/
+│   └── specialists/
 ├── starter-bundles/
 │   ├── MINIMAL.md
 │   ├── STANDARD.md
@@ -152,6 +168,7 @@ agent-os-pack/
 - `packs/core/` → main role templates
 - `packs/support/` → helper roles such as intake routing
 - `packs/vertical/` → domain-specific examples
+- `packs/specialists/` → broader copy-paste specialist library
 - `starter-bundles/` → pre-shaped bundle recommendations
 - `snippets/` → fast copy/paste blocks for handoffs and escalation
 - `examples/` → composition examples and customization checklists
@@ -195,6 +212,8 @@ This pack is built around a few simple operating beliefs:
 - retrieved content should never outrank direct operator intent
 
 If your current workflow feels like a pile of good intentions, this repo is meant to give it a stronger spine.
+
+The specialist library exists so operators can start with a clean core and then pull in deeper domain roles only when they are actually needed.
 
 ---
 
@@ -255,3 +274,9 @@ Because a lot of multi-agent setups fail in predictable ways:
 - “completed” work that is not actually done
 
 This pack is a public attempt to make those failure modes harder to ignore.
+
+---
+
+## Third-party adaptation note
+
+Some specialist roles in `packs/specialists/` are adapted from the MIT-licensed `msitarzewski/agency-agents` project and normalized into this repository's generic, third-person, approval-first format. See `THIRD_PARTY_NOTICES.md`.
