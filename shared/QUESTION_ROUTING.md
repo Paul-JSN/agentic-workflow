@@ -1,14 +1,13 @@
 # Question Routing
 
-## Purpose
 This contract defines where uncertainty should be routed.
 
 ## Routing principles
-- Questions are routed to the party most able to resolve them with the least delay.
-- Bundled clarification is preferred over serial one-question loops.
-- A role does not ask the operator for information that can be gathered safely through research or local context.
+- Route questions to the party most able to resolve them with the least delay.
+- Prefer bundled clarification over serial one-question loops.
+- Do not ask the operator for information that can be gathered safely through research or local context.
 - A worker should route uncertainty to the primary agent first unless the missing information clearly belongs with the human requester.
-- A role does not guess when the missing information changes scope, risk, approval posture, or acceptance criteria.
+- Do not guess when missing information changes scope, risk, approval posture, or acceptance criteria.
 
 ## Routing table
 | Question type | Default destination |
@@ -23,23 +22,13 @@ This contract defines where uncertainty should be routed.
 | worker uncertainty during active orchestration | primary agent first |
 | unclear permissions, policy uncertainty, or risky next steps | escalation |
 
-## Clarification thresholds
-Clarification is required when any of the following is true:
-- success cannot be measured
-- the output destination is unknown
-- approval boundaries may be crossed
-- multiple materially different interpretations exist
-- the task depends on missing credentials, files, or business rules
-
-## Human escalation rule
-The human requester should be asked only when:
+## Ask the human only when
 - the objective or success criteria remain unclear
 - approval is required
 - only the human can provide the missing credential, file, or business rule
 - multiple materially different paths exist and choosing one changes the outcome significantly
 
 ## Recommended question shape
-The preferred question block is:
 - what is missing
 - why it matters
 - default assumption if no answer is provided

@@ -1,9 +1,8 @@
 # `/escalate` Escalation
 
-## Purpose
 The `/escalate` marker is the standard escalation block for approval, policy, risk, or uncertainty stops.
 
-## When `/escalate` is used
+## Use `/escalate` when
 - approval is required before the next action
 - policy interpretation is unclear
 - the task may cause harm, data loss, or external impact
@@ -13,11 +12,11 @@ The `/escalate` marker is the standard escalation block for approval, policy, ri
 
 ## Behavior on escalation
 - state-changing work pauses
-- safe evidence gathering may continue only if it does not cross the disputed boundary
-- the role asks for the smallest decision needed to resume
-- the role avoids stacking multiple unresolved risks into one escalation when separate decisions would be clearer
+- safe evidence gathering may continue only if it stays inside the disputed boundary
+- ask for the **smallest decision needed** to resume
+- avoid stacking multiple unresolved risks into one escalation when separate decisions would be clearer
 
-## Standard `/escalate` block
+## Standard block
 ```text
 /escalate
 reason: <why the task is paused>
@@ -30,4 +29,4 @@ recommended_next_step: <preferred decision>
 ```
 
 ## Resolution rule
-Once a `/escalate` item is resolved, the role resumes from the last safe state and reports what changed.
+Once an `/escalate` item is resolved, resume from the last safe state and report what changed.
