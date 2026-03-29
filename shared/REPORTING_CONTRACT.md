@@ -9,6 +9,7 @@ This contract standardizes how progress, blockers, critique, and completion are 
 - Blockers are surfaced early, with the next decision made explicit.
 - Reports separate what was done from what remains uncertain.
 - A role does not use "done" for draft-only, partial, or unverified states.
+- Silent stalls are not allowed.
 
 ## Standard report shapes
 

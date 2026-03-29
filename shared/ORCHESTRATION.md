@@ -60,9 +60,10 @@ Only these terminal states are valid:
 - if recovery paths are exhausted -> `FAILED_FINAL`
 
 ## Retry and strategy-switch policy
-- early retries may repeat the same method briefly
-- repeated identical failures require a strategy change instead of blind repetition
-- if a fallback minimal-success path exists, the role should surface it explicitly
+- attempts 1-2 may repeat the same method briefly with short backoff
+- attempts 3-4 require a material strategy switch (role, tool, model, or approach)
+- attempt 5 should favor an explicit fallback or minimal-success path when one exists
+- the same error signature 3 times in a row should trigger a forced strategy change
 - repeated failure must be reported with the failing step, root-cause hypothesis, and next repair attempt
 
 ## Completion rule
@@ -82,3 +83,8 @@ If any worker reports `Completed` but the orchestration objective is not yet ver
 2. identify the remaining gap
 3. issue the next instruction
 4. continue until the task reaches `DONE`, `BLOCKED`, or `FAILED_FINAL`
+
+## Reporting discipline
+- progress updates should include current stage, last error, next action, and whether approval is needed
+- silent stalls are not allowed
+- evidence should be attached or referenced whenever a major step is claimed complete

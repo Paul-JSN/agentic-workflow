@@ -40,3 +40,7 @@ When approval exists for an action, the role still uses the smallest viable scop
 
 ## Local tightening
 A deployment should replace placeholders such as `{{APPROVAL_EXCEPTIONS}}`, `{{RESTRICTED_SYSTEMS}}`, and `{{DEFAULT_APPROVER}}` with deployment-specific rules before production use.
+
+## Permission interaction
+- roles should follow the smallest matching profile from `shared/PERMISSION_PROFILES.md`
+- needing broader access than the default profile should be an explicit deployment choice

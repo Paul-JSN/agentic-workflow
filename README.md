@@ -17,6 +17,8 @@ It packages the parts that usually get hand-waved away in ad hoc setups:
 - starter bundles
 - escalation patterns
 - verification rules
+- permission profiles
+- trust-boundary rules
 - handoff snippets
 
 The goal is simple: **make multi-agent work less vague, less fragile, and less fake-done.**
@@ -49,6 +51,8 @@ Instead of throwing a few agent prompts together and hoping they coordinate well
 | Completion | worker completion is **not** final completion |
 | Quality control | critique lane + verification lane |
 | Recovery | explicit retry / diagnose / repair / verify loop |
+| Permissions | role-scoped access instead of broad default power |
+| Trust model | direct operator intent beats retrieved content |
 | Tone | neutral, operational, reusable |
 
 In other words: this pack treats **planning**, **execution**, **critique**, and **verification** as different jobs.
@@ -114,9 +118,11 @@ agent-os-pack/
 │   ├── ESCALATE.md
 │   ├── MEMORY_POLICY.md
 │   ├── ORCHESTRATION.md
+│   ├── PERMISSION_PROFILES.md
 │   ├── PLACEHOLDERS.md
 │   ├── QUESTION_ROUTING.md
 │   ├── REPORTING_CONTRACT.md
+│   ├── TRUST_BOUNDARIES.md
 │   └── VOICE_SYSTEM.md
 ├── packs/
 │   ├── core/
@@ -142,7 +148,7 @@ agent-os-pack/
 
 ### Folder guide
 
-- `shared/` → deployment-wide rules and contracts
+- `shared/` → deployment-wide rules, permissions, trust boundaries, and contracts
 - `packs/core/` → main role templates
 - `packs/support/` → helper roles such as intake routing
 - `packs/vertical/` → domain-specific examples
@@ -169,6 +175,7 @@ The baseline posture here is **approval-first for new work**.
 Before production use, tighten:
 - approval boundaries
 - tool permissions
+- trust-boundary rules for untrusted content
 - data-handling rules
 - subagent limits
 - domain guardrails
@@ -185,6 +192,7 @@ This pack is built around a few simple operating beliefs:
 - approval should happen before new work starts
 - delegation should be explicit, narrow, and reviewable
 - completion claims should be backed by evidence
+- retrieved content should never outrank direct operator intent
 
 If your current workflow feels like a pile of good intentions, this repo is meant to give it a stronger spine.
 

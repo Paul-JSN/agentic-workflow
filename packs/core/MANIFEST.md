@@ -15,8 +15,10 @@ The core pack defines the minimum role set for general-purpose multi-agent work.
 - `shared/VOICE_SYSTEM.md`
 - `shared/ORCHESTRATION.md`
 - `shared/APPROVAL_BOUNDARIES.md`
+- `shared/PERMISSION_PROFILES.md`
 - `shared/QUESTION_ROUTING.md`
 - `shared/REPORTING_CONTRACT.md`
+- `shared/TRUST_BOUNDARIES.md`
 - `shared/ESCALATE.md`
 - `shared/PLACEHOLDERS.md`
 - `shared/MEMORY_POLICY.md`
