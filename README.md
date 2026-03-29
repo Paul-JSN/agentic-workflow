@@ -1,15 +1,15 @@
 # agentic-workflow
 
-> A public OpenClaw orchestration pack for building cleaner, safer, more verifiable multi-agent workflows.
+> A public orchestration pack for building cleaner, safer, more verifiable multi-agent workflows.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/OpenClaw-orchestration%20pack-6b7cff" alt="OpenClaw orchestration pack" />
+  <img src="https://img.shields.io/badge/Agentic-workflow%20pack-6b7cff" alt="Agentic workflow pack" />
   <img src="https://img.shields.io/badge/Status-public%20baseline-2ea043" alt="Status public baseline" />
   <img src="https://img.shields.io/badge/Focus-approval--first%20workflows-f59e0b" alt="Focus approval-first workflows" />
   <img src="https://img.shields.io/badge/Includes-role%20templates%20%2B%20starter%20bundles-8b5cf6" alt="Includes role templates and starter bundles" />
 </p>
 
-This repository is a **generic, reusable Agent OS / workflow pack** for OpenClaw.
+This repository is a **generic, reusable Agent OS / workflow pack** for structured multi-agent systems.
 It packages the parts that usually get hand-waved away in ad hoc setups:
 
 - shared contracts
@@ -125,8 +125,7 @@ agent-os-pack/
 │   │   ├── researcher/
 │   │   ├── executor/
 │   │   ├── critic/
-│   │   ├── verifier/
-│   │   └── reviewer/   # legacy bridge only
+│   │   └── verifier/
 │   ├── support/
 │   └── vertical/
 ├── starter-bundles/
@@ -195,7 +194,7 @@ If your current workflow feels like a pile of good intentions, this repo is mean
 
 This repo is a good fit when you want to build:
 
-- a cleaner personal Agent OS for OpenClaw
+- a cleaner personal Agent OS baseline
 - a reusable multi-agent prompt pack
 - a more disciplined subagent workflow
 - a verification-aware execution loop
@@ -204,7 +203,7 @@ This repo is a good fit when you want to build:
 It is **not** trying to be:
 
 - a private dump of one operator's local system
-- a full beginner setup tutorial for OpenClaw itself
+- a full beginner setup tutorial for any one host platform
 - a giant one-size-fits-all enterprise framework
 
 ---
@@ -222,14 +221,6 @@ Before treating this pack as deployment-ready:
 
 For the full checklist, see:
 - `examples/CUSTOMIZATION_CHECKLIST.md`
-
----
-
-## Migration note
-
-> [!NOTE]
-> The `reviewer` role is kept only as a **legacy bridge**.
-> New deployments should prefer `critic` + `verifier`.
 
 ---
 

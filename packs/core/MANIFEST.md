@@ -10,7 +10,6 @@ The core pack defines the minimum role set for general-purpose multi-agent work.
 - `executor` — scoped execution and repair work
 - `critic` — concrete defect tickets and quality-gap analysis
 - `verifier` — acceptance checks and objective-level completion verification
-- `reviewer` — legacy bridge role retained only for migration; prefer `critic` + `verifier`
 
 ## Required shared contracts
 - `shared/VOICE_SYSTEM.md`
