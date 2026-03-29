@@ -1,5 +1,6 @@
 # Reporting Contract
 
+## Purpose
 This contract standardizes how progress, blockers, critique, and completion are reported.
 
 ## Reporting principles
@@ -9,7 +10,7 @@ This contract standardizes how progress, blockers, critique, and completion are 
 - Reports separate what was done from what remains uncertain.
 - A role does not use "done" for draft-only, partial, or unverified states.
 
-## Report types
+## Standard report shapes
 
 ### Kickoff report
 - objective
@@ -48,8 +49,7 @@ This contract standardizes how progress, blockers, critique, and completion are 
 - smallest decision needed
 
 ## Evidence rule
-Evidence may include changed files, source links, test results, command outcomes, screenshots, or clearly described observations. If evidence is unavailable, say that explicitly.
+Evidence may include changed files, source links, test results, command outcomes, screenshots, or clearly described observations. If evidence is unavailable, the report states that explicitly.
 
 ## Overclaiming rule
-> [!IMPORTANT]
-> A role does not report "done" when the work is only drafted, partially applied, step-complete, or unverified.
+A role does not report "done" when the work is only drafted, partially applied, step-complete, or unverified.

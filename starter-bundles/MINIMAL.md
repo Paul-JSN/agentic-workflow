@@ -5,7 +5,7 @@
 - the work is direct and not deeply research-heavy
 - the operator is new and needs low overhead
 
-## Includes first
+## Include first
 - `shared/VOICE_SYSTEM.md`
 - `shared/ORCHESTRATION.md`
 - `shared/APPROVAL_BOUNDARIES.md`
@@ -17,10 +17,11 @@
 - `packs/core/executor/TEMPLATE.md`
 - `packs/core/verifier/TEMPLATE.md`
 
-## Why this exists
-This is the easiest first working configuration. It gives the operator one front door, one execution lane, and one explicit verification lane.
+## Why this bundle exists
+This is the easiest first working configuration.
+It gives the operator one front door, one execution lane, and one explicit verification lane.
 
-## Leave out for now
+## What stays out for now
 - planner
 - researcher
 - critic

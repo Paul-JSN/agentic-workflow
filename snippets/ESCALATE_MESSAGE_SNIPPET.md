@@ -1,7 +1,5 @@
 # `/escalate` Message Snippet
 
-Use this when a role must pause for approval, policy, risk, or ambiguity.
-
 ```text
 /escalate
 reason:

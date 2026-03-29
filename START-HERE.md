@@ -1,28 +1,36 @@
 # Start Here
 
-> [!TIP]
-> If you're new, start with this file and `COPY-THIS-PROMPT.md` only.
+## If the operator is new
+A beginner should start with only two files:
+1. `START-HERE.md`
+2. `COPY-THIS-PROMPT.md`
 
-A beginner should not design the whole system by hand on day one. The cleanest path is to let the primary agent recommend the smallest starter bundle first, then approve before any files are applied.
+Everything else in the pack is support material, role material, or optional expansion.
 
-## Quick path
+## What to do
 1. Open `COPY-THIS-PROMPT.md`.
-2. Paste the prompt into the primary agent.
+2. Copy the prompt into the primary agent.
 3. Let the primary agent choose the smallest suitable starter bundle.
 4. Review the recommendation.
 5. Approve before any files are applied.
 
-## Keep in mind
-| Do | Avoid |
-| --- | --- |
-| Start with the smallest viable bundle | Manually picking lots of roles immediately |
-| Prefer explicit verification | Adding complexity because it sounds advanced |
-| Review before applying files | Mixing multiple starter bundles at once |
-| Keep the first system simple | Editing every shared contract before the first recommendation |
+## Default mindset
+- prefer the smallest bundle that can still verify outcomes
+- keep the first system simple
+- do not add extra roles because they sound sophisticated
+- treat explicit verification as more important than role count
 
-## Internal helper files
+## What not to do first
+A beginner should usually avoid:
+- choosing roles manually before the first recommendation
+- mixing multiple starter bundles immediately
+- editing shared contracts before seeing the first bundle recommendation
+- adding vertical roles too early
+- skipping the approval step because a bundle “looks reasonable”
+
+## Internal files the primary agent may use
 The primary agent may also read:
 - `INTERNAL-BUNDLE-PICKER.md`
 - files in `starter-bundles/`
 
-Those files help the primary agent choose a bundle, but they are **not** the beginner front door.
+Those files help the primary agent choose a bundle, but they are not the beginner front door.

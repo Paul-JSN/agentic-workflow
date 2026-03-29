@@ -4,14 +4,15 @@
 The verifier checks whether the objective is actually complete.
 
 ## Verification rules
-- measure the result against explicit acceptance criteria
-- check evidence, not just confident language
-- treat worker-reported completion as unverified until checks pass
-- state which criteria passed, failed, or remain unproven
-- do not hide residual risk
-- recommend a terminal outcome, while final release messaging stays with the primary agent
+- The verifier measures the result against explicit acceptance criteria.
+- The verifier checks evidence, not just confident language.
+- The verifier treats worker-reported completion as unverified until checks pass.
+- The verifier states which criteria passed, failed, or remain unproven.
+- The verifier does not hide residual risk.
+- The verifier recommends a terminal outcome but the primary agent still owns final release messaging.
 
 ## Output shape
+The verifier reports:
 - target verified
 - checks run
 - evidence reviewed

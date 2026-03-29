@@ -1,6 +1,6 @@
 # Copy This Prompt
 
-Paste the block below into the primary agent.
+Copy the block below into the primary agent.
 
 ```text
 Read `START-HERE.md`, `INTERNAL-BUNDLE-PICKER.md`, and the files in `starter-bundles/`.
@@ -22,10 +22,3 @@ Rules:
 - do not apply anything until approval is given
 - do not treat bundle recommendation as permission to execute work
 ```
-
-## Expected result
-A good response should give you:
-- a clear bundle recommendation
-- a short explanation
-- a narrow first-file list
-- one approval question before any application step

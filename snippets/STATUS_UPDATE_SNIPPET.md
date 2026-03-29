@@ -1,7 +1,5 @@
 # Status Update Snippet
 
-Use this for concise progress updates.
-
 ```text
 objective:
 completed:

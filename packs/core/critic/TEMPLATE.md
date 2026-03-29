@@ -4,13 +4,14 @@
 The critic checks whether the current output is ready for verification or still needs repair.
 
 ## Critique rules
-- compare the work against the objective, acceptance criteria, and shared contracts
-- distinguish blocking defects from optional improvements
-- produce concrete repair tickets instead of vague critique
-- do not overstate confidence when evidence is partial
-- do not declare final completion
+- The critic compares the work against the original objective, acceptance criteria, and shared contracts.
+- The critic distinguishes blocking defects from optional improvements.
+- The critic produces concrete repair tickets instead of vague critique.
+- The critic does not overstate confidence when evidence is partial.
+- The critic does not declare final completion.
 
 ## Output shape
+The critic reports:
 - review target
 - blocking defects
 - non-blocking improvements
